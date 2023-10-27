@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario de Registro</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<script type="text/javascript" src="js/app.js"></script>
+</head>
+<!-- Titulo del sistema de registro, actualizacion y eliminacion de datos-->
+<body>
+	 <!-- Imagen en el centro de la parte superior -->
+	 <div style="text-align: center;">
+        <img src="img/ligaBBVA.png" alt="Imagen de cabecera" />
+    </div>
+<h1>Bienvenido a la Base de datos de la liga BBVA</h1>
+<form action="php/conexion.php" method="post" class="form-register">
+	<h2 class="form-titulo">Ingrese los datos</h2>
+	<div class="contenedor-inputs">
+		<input type="text" id="nombre_jugador" name="nombre_jugador" placeholder="Nombre jugador" class="input-48" required>
+
+		<input type="text" id="apellido_Paterno" name="apellido_Paterno" placeholder="Apellido Paterno" class="input-48" required>
+		
+		<input type="text" id="apellido_Materno" name="apellido_Materno" placeholder="Apellido Materno" class="input-48" required>
+
+		<input type="text" id="apodo" name="apodo" placeholder="Apodo" class="input-48" required>
+
+		<input type="number" id="id_jugador" name="id_jugador" placeholder="ID del jugador" class="input-100" required>
+
+		<input type="date" id="Lugar_nacimiento" name="Lugar_nacimiento" placeholder="Lugar de nacimiento" class="input-48" required>
+
+		<input type="number" id="dorsal" name="dorsal" placeholder="Dorsal del jugador" class="input-48"required >
+
+		<input type="text" id="posicion" name="posicion" placeholder="posicion jugador" class="input-48"required >
+
+		<input type="number" id="precio_mercado" name="precio_mercado" placeholder="Precio del jugador" class="input-48"required >
+
+		<input type="number" id="id_equipo" name="id_equipo" placeholder="ID del equipo donde juega" class="input-100" required>
+
+
+		<!--Botones para realizar las acciones como registrar, actualizar y eliminar-->
+
+		<input type="submit" value="Registrar" class="btn-enviar">
+		<input type="submit" value="Actualizar" class="btn-enviar">
+		<input type="Reset" value="Borrar todo" class="btn-enviar">
+		<p class="form-link">2023 | Todos los derechos reservados | Data Base</a></p>
+	</div>
+</form>
+	
+</body>
+</html>
